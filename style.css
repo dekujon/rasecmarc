@@ -306,6 +306,12 @@ label i {
         padding-right: 5px;
     }
 
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
 }
 
 @media (max-width: 575.98px) {
