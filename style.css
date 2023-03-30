@@ -176,21 +176,26 @@ label i {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 1rem;
 }
 
 .bio img {
-    max-width: 28%;
+    max-width: 32%;
     height: auto;
-    flex-basis: 35%;
+    flex-basis: 32%;
+}
+
+.bio .bioPara {
+    flex-basis: 65%;
 }
 
 .bio p {
-    /* padding: 1.5rem; */
-    flex-basis: 64%;
+    margin-bottom: 1rem;
 }
 
 .form label, .form input, .form textarea {
     display: block;
+    padding: 5px;
 }
 .form label {
     padding-bottom: 0.8rem;
@@ -209,6 +214,7 @@ label i {
     background-color: #0F3D3E;
     padding: 10px 15px;
     cursor: pointer;
+    border: none;
 }
 
 .button:hover {
@@ -229,7 +235,6 @@ label i {
 .soc-med {
     flex: 1;
     padding: 1.5rem;
-    align-self: center;
 }
 
 .soc-med i {
@@ -255,6 +260,16 @@ label i {
         position: absolute;
     }
 
+    .bio img {
+        max-width: 30%;
+        flex-basis: 30%;
+    }
+    
+    .bio .bioPara {
+        flex-basis: 67%;
+        font-size: 0.9375rem;
+    }
+
 }
 
 @media (max-width: 767.98px) {
@@ -267,23 +282,22 @@ label i {
     }
 
     .soc-med {
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
 
 
     .bio img {
-        max-width: 100%;
+        max-width: 50%;
         flex-basis: 100%;
         margin: 0 auto;
     }
 
-    .bio p {
+    .bio .bioPara {
         flex-basis: 100%;
         margin: 0 auto;
         padding-top: 2rem;
         padding-left: 0;
         padding-right: 0;
-        text-align: center;
     }
 
     .margin-w {
